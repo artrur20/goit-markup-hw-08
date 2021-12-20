@@ -1,0 +1,32 @@
+.reasons {
+    padding-top: 0;
+}
+.reasons__title {
+    text-align: center;
+    @include font(36px, 1.16, 0.03em, bold);
+    color: var(--second-title-color);
+}
+
+.reasons-list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.reasons-list__item {
+    position: relative;
+}
+.reasons-list__title {
+    position: absolute;
+    top: 225px;
+    left: 0;
+    @include font(14px, 1.14, 0.03em, bold);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+}

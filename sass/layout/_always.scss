@@ -1,0 +1,36 @@
+.always-client-title {
+    text-align: center;
+    @include font(36px, 1.16, 0.03em, bold);
+    color: var(--second-title-color);
+    margin-bottom: 50px;
+}
+
+.always-client__list {
+    display: flex;
+    margin-top: 0 auto;
+    justify-content: space-between;
+}
+
+.client__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    &:hover {
+        border-color: var(--logo-hover-color);
+     }
+}
+.client__link {
+    transition: 250ms var(--cubic);
+    display: flex;
+}
+
+.client__icon {
+    fill: #AFB1B8;
+    margin: 16px 32px 16px 32px;
+    transition: 250ms var(--cubic);
+    .client__link:hover & {
+        fill: var(--logo-hover-color);
+    }
+}

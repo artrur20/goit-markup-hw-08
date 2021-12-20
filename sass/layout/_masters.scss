@@ -1,0 +1,67 @@
+.masters {
+    background-color: #F5F4FA;;
+}
+
+
+.masters__title {
+    @include font(36px, 1.16, 0.03em, bold);
+    text-align: center;
+    color: var(--second-title-color);
+}
+
+.masters-list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.masters-list__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.masters-list__name {
+    padding: 30px 60px 16px 60px;
+    background-color: var(--main-title-color);
+}
+
+.masters-list__socials {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 32px 30px 32px;
+    background-color: var(--main-title-color);
+}
+.socials__link {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 250ms var(--cubic);
+    &:hover {
+        background-color: var(--logo-hover-color);
+    }
+    &:hover .socials__icon {
+        fill: var(--main-title-color);
+    }
+}
+.socials__icon {
+    fill: #AFB1B8;
+    transition: 250ms var(--cubic);
+}
+.masters-list__title {
+    @include font(16px, 1.18, 0.03em, 500);
+    text-align: center;
+    color: var(--second-title-color);
+}
+
+.masters-list__text {
+    text-align: center;
+    @include font(16px, 1.18, 0.03em, normal);
+    color: var(--first-text-color);
+    padding-top: 10px;
+}
