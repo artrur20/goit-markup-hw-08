@@ -1,3 +1,7 @@
+.always-client {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .always-client-title {
     text-align: center;
     @include font(36px, 1.16, 0.03em, bold);
@@ -7,18 +11,29 @@
 
 .always-client__list {
     display: flex;
-    margin-top: 0 auto;
     justify-content: space-between;
+    @media screen and  (max-width: 1199px) {
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 767px) {
+          flex-wrap: wrap;
+      }
 }
 
 .client__item {
     display: flex;
+    width: 170px;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     &:hover {
         border-color: var(--logo-hover-color);
+     }
+     @media screen and (max-width: 768px) {
+        flex-basis: calc((100% - 120px) / 2);
+        margin: 15px;
+        width: 100%;
      }
 }
 .client__link {

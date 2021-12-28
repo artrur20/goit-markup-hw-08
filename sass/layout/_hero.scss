@@ -1,6 +1,6 @@
 .hero  {
+    background-image: linear-gradient(#2F303A66,rgba(47, 48, 58, 0.4)),url(../images/hero1200.jpg);
     background-color: #2F303A66;
-    background-image: linear-gradient(#2F303A66,rgba(47, 48, 58, 0.4)),url(../images/hero-fon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8,6 +8,25 @@
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
+    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(#2F303A66,rgba(47, 48, 58, 0.4)),url(../images/heroo1200-2x.jpg);
+  }
+    @media screen and (max-width: 768px) {
+        background-image: linear-gradient(#2F303A66,rgba(47, 48, 58, 0.4)),url(../images/hero768.jpg);
+        height: 100%;
+        width: 100%;
+        @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(#2F303A66,rgba(47, 48, 58, 0.4)),url(../images/hero768-2x.jpg);
+      }
+    }
+    @media screen and (max-width: 480px) {
+        background-image: linear-gradient(#2F303A66,rgba(47, 48, 58, 0.4)),url(../images/hero480.jpg);
+        max-width: 100%;
+        min-height: 100%;
+        @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(#2F303A66,rgba(47, 48, 58, 0.4)),url(../images/hero480-2x.jpg);
+      }
+    }
 }
 
 
@@ -17,4 +36,7 @@
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 40px;
+    @media screen and (min-width: 720px) {
+        @include font(26px, 1.62, 0.06em, 900);
+    }
 }

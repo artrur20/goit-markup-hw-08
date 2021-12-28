@@ -1,5 +1,10 @@
 .reasons {
     padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 .reasons__title {
     text-align: center;
