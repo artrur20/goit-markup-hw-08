@@ -132,9 +132,10 @@
 }
 
 .footer-right-wrap {
-    justify-content: space-between;
-    @media screen and(min-width: 1199px) {
+
+    @media screen and (min-width: 1199px) {
         display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -155,7 +156,9 @@
     margin-right: 12px;
     outline: none;
     color: rgba(255, 255, 255, 0.6);
-
+    @media screen and(max-width: 480px) {
+        max-width: 80%;
+    }
 }
 
 .footer-right-wrap__btn {
@@ -173,13 +176,10 @@
     color: var(--main-title-color);
     @media screen and (max-width: 1199px)  {
         margin-top: 20px;
-    }
-    @media screen and(max-width: 768px) {
         position: relative;
         left: 50%;
         transform: translate(-50%,0);
     }
-
 }
 
 .sub__btn-icon {
