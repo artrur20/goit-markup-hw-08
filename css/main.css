@@ -500,7 +500,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.02em;
   font-weight: 500;
-  color: var(--second-title-color);
+  color: var(--first-text-color);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -511,7 +511,7 @@ button {
 }
 
 .mobile-menu__link:hover, .mobile-menu__link:focus {
-  color: var(--accent-color);
+  color: var(--logo-hover-color);
 }
 
 .mobile-menu__link--current.current::before {
@@ -586,7 +586,7 @@ button {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: var(--first-text-color);
+  color: var(--logo-hover-color);
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
   position: relative;
@@ -979,8 +979,8 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .masters-list__item {
-    -ms-flex-preferred-size: calc((100% - 120px) / 2);
-        flex-basis: calc((100% - 120px) / 2);
+    -ms-flex-preferred-size: calc((100% - 168px) / 2);
+        flex-basis: calc((100% - 168px) / 2);
     margin: 30px;
   }
 }
@@ -1630,6 +1630,9 @@ button {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--cubic);
           transition-timing-function: var(--cubic);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

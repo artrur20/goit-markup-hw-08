@@ -134,7 +134,7 @@
 
   .mobile-menu__link {
     @include font(40px, 1.17, 0.02em, 500);
-    color: var(--second-title-color);
+    color: var(--first-text-color);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
@@ -142,7 +142,7 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color)
+      color: var(--logo-hover-color);
     }
 
     &--current.current::before {
@@ -173,7 +173,7 @@
 
   .mobile-contacts__link {
     @include font(24px, 1.17, 0.02em, 500);
-    color: var(--logo-hover-color);
+    color: var(--first-text-color);
     transition: font-size 259ms var(--cubic), color 250ms var(--cubic);
 
     &:hover,
@@ -208,7 +208,7 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: var(--first-text-color);
+    color: var(--logo-hover-color);
     transition: color 250ms var(--cubic);
     position: relative;
 

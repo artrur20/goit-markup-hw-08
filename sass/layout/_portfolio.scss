@@ -92,6 +92,7 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
+    max-width: max-content;
 
     &:hover,
     &:focus {
