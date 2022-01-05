@@ -6,6 +6,10 @@
     top: 0;
     left: 0;
     transition: opacity 250ms, visibility 259ms;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 11;
 }
 .modal {
     width: 528px;
@@ -17,6 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
+    z-index: 11;
     @media screen and (max-width: 1199px) {
         width: 450px;
         height: 609px;

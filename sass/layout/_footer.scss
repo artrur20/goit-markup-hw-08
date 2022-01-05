@@ -1,6 +1,7 @@
 .footer {
     background-color: #2F303A;
-    padding: 60px 15px 60px 15px;
+    padding: 60px 15px;
+    width: 100%;
 }
 .footer-conteiner {
     @media screen and (min-width: 1200px) {
@@ -30,7 +31,7 @@
         margin-top: 60px;
       }
       @media screen and (max-width: 480px) {
-        margin-left: 28px;
+          margin-left: 29px;
       }
 }
 
